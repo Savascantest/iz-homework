@@ -1,1 +1,18 @@
-import{readFile}from'node:fs/promises';const idx=JSON.parse(await readFile('public/homeworks/index.json','utf8'));if(idx.length!==1)throw Error('Expected one dated package');const d=JSON.parse(await readFile(`public/homeworks/${idx[0].id}/homework.json`,'utf8'));if(d.meetingUuid!=='E7FC178B-EA38-4451-8BBC-42B320C3985E')throw Error('UUID mismatch');if(!d.teacherNote?.detected||!d.teacherNote.applied)throw Error('Teacher note missing');if(d.sections.find(x=>x.id==='reading').readings.length!==3)throw Error('Exactly three readings required');for(const r of d.sections.find(x=>x.id==='reading').readings)if(r.text.split(/\s+/).length<300)throw Error('Reading under 300 words');console.log('Validated dated package, teacher note, three 300+ word readings, and interactive section data.');
+import { readFile } from 'node:fs/promises';
+import { assertPublicPackagePrivacy } from './lib/public-package-privacy.mjs';
+
+const index = JSON.parse(await readFile('public/homeworks/index.json', 'utf8'));
+if (index.length !== 1) throw new Error('Expected one dated package');
+
+assertPublicPackagePrivacy(index, 'public homework index');
+
+const packageData = JSON.parse(await readFile(`public/homeworks/${index[0].id}/homework.json`, 'utf8'));
+assertPublicPackagePrivacy(packageData, `public package ${index[0].id}`);
+
+const reading = packageData.sections.find((section) => section.id === 'reading');
+if (!reading || reading.readings.length !== 3) throw new Error('Exactly three readings required');
+for (const item of reading.readings) {
+  if (item.text.split(/\s+/).length < 300) throw new Error('Reading under 300 words');
+}
+
+console.log('Validated public privacy boundary, three 300+ word readings, and interactive section data.');
