@@ -48,7 +48,7 @@ function expectViolation(mutator, expected) {
 }
 
 test('approved private-config values are represented by the future public contract', () => {
-  assert.equal(IZ_ARCHITECTURE_V1_EFFECTIVE_DATE, '2026-09-14');
+  assert.equal(IZ_ARCHITECTURE_V1_EFFECTIVE_DATE, '2026-08-27');
   assert.equal(IZ_POLICY_VERSION, 'iz-lesson-based-reinforcement@1');
   assert.equal(IZ_TEMPLATE_CONTRACT_VERSION, 'iz-seven-section-interactive@1');
   assert.equal(IZ_ASSESSMENT_POLICY_VERSION, 'iz-ten-question-feedback@1');

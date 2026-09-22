@@ -1,4 +1,6 @@
-export const IZ_ARCHITECTURE_V1_EFFECTIVE_DATE = '2026-09-14';
+// The preserved 26 August lesson is the only legacy package. Every later
+// package is authored under the approved Architecture v1 contract.
+export const IZ_ARCHITECTURE_V1_EFFECTIVE_DATE = '2026-08-27';
 export const IZ_POLICY_VERSION = 'iz-lesson-based-reinforcement@1';
 export const IZ_TEMPLATE_CONTRACT_VERSION = 'iz-seven-section-interactive@1';
 export const IZ_ASSESSMENT_POLICY_VERSION = 'iz-ten-question-feedback@1';

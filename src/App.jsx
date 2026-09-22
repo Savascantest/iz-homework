@@ -2,9 +2,9 @@ import React,{useEffect,useMemo,useState} from 'react';
 
 const icons={notes:'✦',grammar:'Aa',vocabulary:'◇',practice:'✓',reading:'▤',listening:'◖',conversation:'☏',quiz:'★'};
 function Exercise({q,id,onMistake}){
- const [answer,setAnswer]=useState(''); const correct=answer===q.a;
- const choose=v=>{setAnswer(v);onMistake(id,v===q.a?null:{q:q.q,a:q.a});};
- return <div className={'exercise '+(answer?(correct?'right':'wrong'):'')}><p><b>{q.q}</b></p><div className="options">{q.opt.map(x=><button key={x} onClick={()=>choose(x)} className={answer===x?'chosen':''}>{x}</button>)}</div>{answer&&<p className="feedback">{correct?'Correct — nicely done.':<>Try again. Hint: {q.hint||'Look at the rule or text once more.'}</>}</p>}</div>
+ const [answer,setAnswer]=useState(null); const answerIndex=Number.isInteger(q.a)?q.a:q.opt.indexOf(q.a); const correct=answer===answerIndex;
+ const choose=index=>{setAnswer(index);onMistake(id,index===answerIndex?null:{q:q.q,a:q.opt[answerIndex]});};
+ return <div className={'exercise '+(answer!==null?(correct?'right':'wrong'):'')}><p><b>{q.q}</b></p><div className="options">{q.opt.map((x,index)=><button key={x} onClick={()=>choose(index)} className={answer===index?'chosen':''}>{x}</button>)}</div>{answer!==null&&<p className="feedback">{correct?'Correct — nicely done.':<>Try again. Hint: {q.hint||'Look at the rule or text once more.'}</>}</p>}</div>
 }
 function Questions({items,prefix,onDone,onMistake}){return <><div className="stack">{items.map((q,i)=><Exercise key={i} q={q} id={`${prefix}-${i}`} onMistake={onMistake}/>)}</div><button className="primary" onClick={onDone}>Mark section complete</button></>}
 export default function App(){
