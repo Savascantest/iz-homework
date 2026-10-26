@@ -1,5 +1,7 @@
 // Lesson updates are kept separately so the original archive packages remain intact.
+import {septemberUpdate} from './lesson-september.js';
 export const draftUpdates = {
+  '2026-09-29-1ee19b91bc89fdf1': septemberUpdate,
   '2026-10-17-9b88ed81f56a384d': {
     patterns: [
       {label:'An opinion: present simple',parts:['I','think','the plan is useful.'],explanation:'Think expresses an opinion here.'},
@@ -129,15 +131,16 @@ export function applyLessonUpdate(lesson) {
   });
   const sections = lesson.sections.map(section => {
     switch(section.id) {
+      case 'notes': return update.notesCards ? {...section,cards:update.notesCards} : section;
       case 'grammar': return {...section,patterns:update.patterns,questions:questions(update.grammarQuestions)};
       case 'vocabulary': return {...section,cards:update.vocabulary,questions:questions(update.vocabularyQuestions,[2,0,3,1,3,0,2,1,0,2,1,3,2,1,0])};
       case 'practice': return {...section,questions:questions(update.practice.questions,[2,0,3,1,0,3,1,2]),activities:update.practice.activities.map(a=>({...a,id:`v2-${a.id}`}))};
-      case 'reading': return {...section,title:'Read about states and actions',readings:update.readings.map((r,i)=>({...r,questions:questions(r.questions,[[2,0,3,1,0,0],[1,3,0,0,1,1],[3,2,1,1,0,1]][i])}))};
-      case 'listening': return {...section,title:'Watch and listen',intro:'Watch the external video, then answer the questions below.',audioText:undefined,activities:undefined,external:update.listening.external,questions:questions(update.listening.questions)};
+      case 'reading': return {...section,title:update.readingTitle||'Read about states and actions',intro:update.readingIntro||section.intro,readings:update.readings.map((r,i)=>({...r,questions:questions(r.questions,[[2,0,3,1,0,0],[1,3,0,0,1,1],[3,2,1,1,0,1]][i])}))};
+      case 'listening': return {...section,title:update.listeningTitle||'Watch and listen',intro:update.listeningIntro||'Watch the external video, then answer the questions below.',audioText:undefined,activities:undefined,external:update.listening.external,questions:questions(update.listening.questions)};
       default: return section;
     }
   });
   const quizIndex=sections.findIndex(section=>section.id==='quiz');
-  sections.splice(quizIndex<0?sections.length:quizIndex,0,{id:'writing',label:'Writing',title:'Write about a place or meal',activities:[{...update.writing,id:`v2-${update.writing.id}`}]});
+  sections.splice(quizIndex<0?sections.length:quizIndex,0,{id:'writing',label:'Writing',title:update.writingTitle||'Write about a place or meal',activities:[{...update.writing,id:`v2-${update.writing.id}`}]});
   return {...lesson,sections};
 }
