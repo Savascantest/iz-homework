@@ -1,6 +1,8 @@
 // Lesson updates are kept separately so the original archive packages remain intact.
 import {septemberUpdate} from './lesson-september.js';
+import {september21Update} from './lesson-september21.js';
 export const draftUpdates = {
+  '2026-09-21-t4j7m1q8y5k2': september21Update,
   '2026-09-29-1ee19b91bc89fdf1': septemberUpdate,
   '2026-10-17-9b88ed81f56a384d': {
     patterns: [
@@ -135,8 +137,9 @@ export function applyLessonUpdate(lesson) {
       case 'grammar': return {...section,patterns:update.patterns,questions:questions(update.grammarQuestions)};
       case 'vocabulary': return {...section,cards:update.vocabulary,questions:questions(update.vocabularyQuestions,[2,0,3,1,3,0,2,1,0,2,1,3,2,1,0])};
       case 'practice': return {...section,questions:questions(update.practice.questions,[2,0,3,1,0,3,1,2]),activities:update.practice.activities.map(a=>({...a,id:`v2-${a.id}`}))};
-      case 'reading': return {...section,title:update.readingTitle||'Read about states and actions',intro:update.readingIntro||section.intro,readings:update.readings.map((r,i)=>({...r,questions:questions(r.questions,[[2,0,3,1,0,0],[1,3,0,0,1,1],[3,2,1,1,0,1]][i])}))};
+      case 'reading': return {...section,title:update.readingTitle||'Read about states and actions',intro:update.readingIntro||section.intro,readings:update.readings.map((r,i)=>({...r,text:r.originalReading?section.readings[0].text:r.text,questions:questions(r.questions,[[2,0,3,1,0,0],[1,3,0,0,1,1],[3,2,1,1,0,1]][i])}))};
       case 'listening': return {...section,title:update.listeningTitle||'Watch and listen',intro:update.listeningIntro||'Watch the external video, then answer the questions below.',audioText:undefined,activities:undefined,external:update.listening.external,questions:questions(update.listening.questions)};
+      case 'quiz': return update.quizReplacements ? {...section,questions:section.questions.map(q=>update.quizReplacements[q.id]||q)} : section;
       default: return section;
     }
   });
