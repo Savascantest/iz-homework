@@ -1,0 +1,309 @@
+{
+  "id": "2026-10-17-9b88ed81f56a384d",
+  "student": "Iz",
+  "date": "2026-10-17",
+  "dateLabel": "17 Oct 2026",
+  "title": "Stative Verbs: States & Actions",
+  "subtitle": "Understand why meaning changes the form, then put the distinction into practice.",
+  "policyVersion": "iz-lesson-based-reinforcement@1",
+  "templateContractVersion": "iz-seven-section-interactive@1",
+  "assessmentPolicyVersion": "iz-ten-question-feedback@1",
+  "sections": [
+    {
+      "id": "notes",
+      "label": "Lesson Notes",
+      "title": "A state or an action?",
+      "intro": "We revisited stative verbs, their categories and the way some verbs change meaning when they describe an action.",
+      "cards": [
+        {
+          "title": "Start with meaning",
+          "text": "A stative verb often describes a condition, feeling, possession, perception or thought rather than an action in progress."
+        },
+        {
+          "title": "The same word may change jobs",
+          "text": "Compare ‘I think it is useful’ (opinion) with ‘I’m thinking about it’ (an active mental process)."
+        },
+        {
+          "title": "Read the whole sentence",
+          "text": "Ask who is doing what. ‘The sauce tastes good’ describes a quality; ‘The chef is tasting the sauce’ describes a deliberate action."
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "label": "Grammar",
+      "title": "How stative verbs work",
+      "cards": [
+        {
+          "title": "States: usually present simple",
+          "text": "Many stative meanings normally use the present simple, even when true now: ‘I know the answer’, ‘She owns the book’, ‘This smells good’. Avoid ‘I am knowing the answer’."
+        },
+        {
+          "title": "Groups of meanings",
+          "text": "Common examples include mental states (know, understand, believe), feelings and preferences (like, love, prefer), possession (own, belong, have) and senses (hear, smell, taste). These are tendencies, not a rule that every use of a word is always stative."
+        },
+        {
+          "title": "Think: opinion or process",
+          "text": "‘I think this plan is useful’ expresses an opinion. ‘I’m thinking about the plan’ means I am considering it now. Present continuous is be + verb-ing: I am thinking; she is thinking."
+        },
+        {
+          "title": "Taste and smell",
+          "text": "A quality uses a state meaning: ‘The soup tastes salty’ and ‘The flowers smell lovely’. An intentional action can be continuous: ‘The chef is tasting the soup’ and ‘She is smelling the flowers’."
+        },
+        {
+          "title": "Have and see",
+          "text": "For possession, say ‘I have a car’, not normally ‘I’m having a car’. In an experience, continuous can work: ‘We’re having lunch’. ‘I see what you mean’ expresses understanding; ‘I’m seeing a friend tomorrow’ can mean a planned meeting."
+        },
+        {
+          "title": "Be and temporary behaviour",
+          "text": "‘She is helpful’ describes a quality. ‘She is being helpful today’ can describe behaviour at a particular time. This does not mean every adjective or every stative verb works in the continuous."
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "title": "Verbs for states and senses",
+      "cards": [
+        {
+          "title": "believe",
+          "text": "Think something is true. ‘I believe this is the right answer.’"
+        },
+        {
+          "title": "belong",
+          "text": "Be owned by or be connected to someone. ‘This book belongs to my friend.’"
+        },
+        {
+          "title": "prefer",
+          "text": "Like one thing more than another. ‘I prefer quiet cafés.’"
+        },
+        {
+          "title": "taste",
+          "text": "Describe flavour or actively test food. ‘The soup tastes good.’ ‘The chef is tasting it.’"
+        },
+        {
+          "title": "smell",
+          "text": "Describe an odour or deliberately use your sense of smell. ‘It smells fresh.’ ‘She is smelling the flowers.’"
+        },
+        {
+          "title": "think about",
+          "text": "Consider something. ‘I’m thinking about my next lesson.’"
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "label": "Practice",
+      "title": "Choose meaning, then form",
+      "activities": [
+        {
+          "id": "a1",
+          "type": "correct",
+          "prompt": "Correct: I am knowing the answer.",
+          "example": "I know the answer."
+        },
+        {
+          "id": "a2",
+          "type": "transformation",
+          "prompt": "Change the opinion into an active process: I think about the plan. Make it clear that the person is considering it now.",
+          "example": "I’m thinking about the plan now."
+        },
+        {
+          "id": "a3",
+          "type": "matching",
+          "prompt": "Match the meaning: ‘The soup tastes good’ / ‘The chef is tasting the soup’ — quality / deliberate action.",
+          "example": "The soup tastes good = quality. The chef is tasting the soup = deliberate action."
+        },
+        {
+          "id": "a4",
+          "type": "complete",
+          "prompt": "Complete: She ___ (think) about the question at the moment.",
+          "example": "She is thinking about the question at the moment."
+        },
+        {
+          "id": "a5",
+          "type": "speaking",
+          "prompt": "Say one sentence with think for an opinion and one with thinking for an action.",
+          "example": "I think this lesson is useful. I’m thinking about my next goal."
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "label": "Reading",
+      "title": "In the kitchen",
+      "readings": [
+        {
+          "title": "A sauce for dinner",
+          "text": "A chef is making a new sauce. It smells wonderful, and a colleague thinks it will be popular. The chef is tasting the sauce now because she wants to check the flavour. She believes it needs a little more salt.\n\nHer colleague owns a small café and enjoys trying new recipes. Today, he is helping the chef prepare dinner. He says the sauce tastes rich and offers a suggestion. The chef is thinking about his idea before making a final change.",
+          "questions": [
+            {
+              "id": "r1",
+              "q": "Why is the chef tasting the sauce?",
+              "opt": [
+                "To check its flavour",
+                "To describe ownership",
+                "To practise climbing"
+              ],
+              "a": 0,
+              "hint": "Find the reason in the first paragraph."
+            },
+            {
+              "id": "r2",
+              "q": "What does the colleague own?",
+              "opt": [
+                "a hotel",
+                "a small café",
+                "a mountain"
+              ],
+              "a": 1,
+              "hint": "Look at the second paragraph."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "label": "Listening",
+      "title": "Hear the contrast",
+      "intro": "Listen to the original examples, then repeat them. You can also read the script below.",
+      "audioText": "I think the sauce tastes wonderful. The chef is tasting it now. She is thinking about adding a little more salt. The flowers smell lovely, and a guest is smelling them.",
+      "activities": [
+        {
+          "id": "l1",
+          "type": "writing",
+          "prompt": "Which two actions are happening now?",
+          "example": "The chef is tasting the sauce, and she is thinking about adding salt. A guest is also smelling the flowers."
+        }
+      ]
+    },
+    {
+      "id": "quiz",
+      "label": "Final Quiz",
+      "title": "Check states and actions",
+      "questions": [
+        {
+          "id": "q1",
+          "q": "Choose the natural sentence for an opinion.",
+          "opt": [
+            "I am think this plan is useful.",
+            "I think this plan is useful.",
+            "I thinking this plan useful.",
+            "I am knowing it useful."
+          ],
+          "a": 1,
+          "hint": "Think for an opinion usually uses present simple."
+        },
+        {
+          "id": "q2",
+          "q": "Complete: She ___ about the answer now.",
+          "opt": [
+            "thinking",
+            "is think",
+            "is thinking",
+            "thinks is"
+          ],
+          "a": 2,
+          "hint": "An active process: be + -ing."
+        },
+        {
+          "id": "q3",
+          "q": "Which sentence describes the flavour?",
+          "opt": [
+            "The sauce tastes salty.",
+            "The chef owns a café.",
+            "The chef is tasting the sauce.",
+            "The guest is smelling flowers."
+          ],
+          "a": 0,
+          "hint": "The sauce is the subject."
+        },
+        {
+          "id": "q4",
+          "q": "Choose the correct possession sentence.",
+          "opt": [
+            "I am owning a car.",
+            "I am having a car for years.",
+            "I owning a car.",
+            "I have a car."
+          ],
+          "a": 3,
+          "hint": "Have for possession is normally stative."
+        },
+        {
+          "id": "q5",
+          "q": "Which sentence describes a deliberate action?",
+          "opt": [
+            "The soup tastes spicy.",
+            "The chef is tasting the soup.",
+            "The soup belongs to us.",
+            "I know the recipe."
+          ],
+          "a": 1,
+          "hint": "Someone is actively testing the food."
+        },
+        {
+          "id": "q6",
+          "q": "Complete: This book ___ to my friend.",
+          "opt": [
+            "is belonging",
+            "is belong",
+            "belonging",
+            "belongs"
+          ],
+          "a": 3,
+          "hint": "Belong is normally used as a state."
+        },
+        {
+          "id": "q7",
+          "q": "Which pair contrasts an opinion with an active process?",
+          "opt": [
+            "I have a book / I own a book",
+            "It smells good / It tastes good",
+            "I think it is useful / I’m thinking about it",
+            "I know it / I understand it"
+          ],
+          "a": 2,
+          "hint": "Look at the two meanings of think."
+        },
+        {
+          "id": "q8",
+          "q": "What does ‘She is being helpful today’ describe?",
+          "opt": [
+            "Behaviour at a particular time",
+            "A permanent measurement",
+            "A future plan only",
+            "A possession"
+          ],
+          "a": 0,
+          "hint": "Notice today and being."
+        },
+        {
+          "id": "q9",
+          "q": "Choose the natural sentence for understanding.",
+          "opt": [
+            "I am knowing the rule.",
+            "I understanding the rule.",
+            "I am understand the rule.",
+            "I understand the rule."
+          ],
+          "a": 3,
+          "hint": "Understand is normally stative."
+        },
+        {
+          "id": "q10",
+          "q": "Which sentence uses have for an experience?",
+          "opt": [
+            "I have two books.",
+            "We are having lunch.",
+            "I have a bicycle.",
+            "This book has a cover."
+          ],
+          "a": 1,
+          "hint": "The activity is happening now."
+        }
+      ]
+    }
+  ]
+}

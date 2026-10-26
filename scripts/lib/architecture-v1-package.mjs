@@ -1,5 +1,5 @@
-// The preserved 26 August lesson is the only legacy package. Every later
-// package is authored under the approved Architecture v1 contract.
+// The preserved 26 August lesson is the only legacy package. Backfilled
+// lessons before that date use the same contract as newly authored packages.
 export const IZ_ARCHITECTURE_V1_EFFECTIVE_DATE = '2026-08-27';
 export const IZ_POLICY_VERSION = 'iz-lesson-based-reinforcement@1';
 export const IZ_TEMPLATE_CONTRACT_VERSION = 'iz-seven-section-interactive@1';
@@ -19,7 +19,7 @@ const REQUIRED_SECTIONS = [
 ];
 
 export function isFutureIzArchitectureV1Package(pkg) {
-  return typeof pkg?.date === 'string' && pkg.date >= IZ_ARCHITECTURE_V1_EFFECTIVE_DATE;
+  return typeof pkg?.date === 'string' && pkg.id !== '2026-08-26-E7FC178B';
 }
 
 export function isValidNoHomeworkOutcome(outcome) {

@@ -35,9 +35,18 @@ const PRIVATE_FIELD_NAMES = new Set([
   'contenthash',
   'privatepath',
   'privatefilesystempath',
+  'learnerstate',
+  'studentprofile',
+  'privateprofile',
+  'taskid',
+  'zoomid',
+  'token',
+  'secret',
+  'accesstoken',
+  'apikey',
 ]);
 
-const PRIVATE_PATH_PATTERN = /(?:^|[\\/])work[\\/]private(?:[\\/]|$)|(?:^|[\\/])private[\\/](?:lesson|source|planning|evidence)(?:[\\/]|$)/i;
+const PRIVATE_PATH_PATTERN = /(?:^|[\\/])work[\\/]private(?:[\\/]|$)|(?:^|[\\/])private[\\/](?:lesson|source|planning|evidence)(?:[\\/]|$)|\b[a-z]:[\\/](?:users|documents|home)[\\/]/i;
 const UUID_PATTERN = /\b[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}\b/i;
 
 export function normalizeFieldName(name) {

@@ -1,0 +1,310 @@
+{
+  "id": "2026-09-29-1ee19b91bc89fdf1",
+  "student": "Iz",
+  "date": "2026-09-29",
+  "dateLabel": "29 Sep 2026",
+  "title": "Tense Review, Hobbies & Short Answers",
+  "subtitle": "Review sentence patterns and explain your ideas in two or three sentences.",
+  "policyVersion": "iz-lesson-based-reinforcement@1",
+  "templateContractVersion": "iz-seven-section-interactive@1",
+  "assessmentPolicyVersion": "iz-ten-question-feedback@1",
+  "sections": [
+    {
+      "id": "notes",
+      "label": "Lesson Notes",
+      "title": "A grammar and vocabulary challenge",
+      "intro": "We reviewed tense choices and sentence structure through a challenge, then revisited hobbies, puzzles, opponents and climbing.",
+      "cards": [
+        {
+          "title": "Read the meaning first",
+          "text": "Ask whether a sentence describes a routine, an action happening around now, or a future plan before choosing a form."
+        },
+        {
+          "title": "Notice sense verbs",
+          "text": "A taste or smell can describe a quality: ‘The pie tastes great.’ A person can also actively taste or smell something: ‘The chef is tasting the sauce.’"
+        },
+        {
+          "title": "A short written response",
+          "text": "For the reading task, answer each question in about two or three sentences. Give your main answer and add a brief explanation."
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "label": "Grammar",
+      "title": "Tenses and sentence structure",
+      "cards": [
+        {
+          "title": "Present continuous",
+          "text": "Use am/is/are + verb-ing for actions happening now or around now: ‘The intern is helping in the kitchen today.’ In a question, put be before the subject: ‘What are you doing?’"
+        },
+        {
+          "title": "Future plans with going to",
+          "text": "Use am/is/are + going to + base verb for an intention: ‘I’m going to open the door.’ The be verb changes with the subject: she is, they are."
+        },
+        {
+          "title": "Routines and frequency",
+          "text": "Use present simple for habits: ‘He often comes to class late.’ Frequency adverbs usually go before the main verb; after be, they come after be."
+        },
+        {
+          "title": "A useful correction",
+          "text": "Describe a food’s quality with a state verb: ‘The apple pie tastes great’, not usually ‘is tasting great’. Use continuous for an active test: ‘The chef is tasting it.’"
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "title": "Words from the review",
+      "cards": [
+        {
+          "title": "opponent",
+          "text": "A person or team you compete against. ‘Her opponent played well.’"
+        },
+        {
+          "title": "climbing",
+          "text": "The activity of moving up a mountain or other steep surface. ‘Climbing a mountain can be a memorable experience.’"
+        },
+        {
+          "title": "experience",
+          "text": "An event or activity that happens to someone. ‘The climb was a new experience.’"
+        },
+        {
+          "title": "intern",
+          "text": "A person gaining practical work experience. ‘The intern is helping the team today.’"
+        },
+        {
+          "title": "puzzle",
+          "text": "A problem or picture made from pieces that you try to solve. ‘They are doing a puzzle.’"
+        },
+        {
+          "title": "can't stand",
+          "text": "Dislike something very strongly. ‘I can’t stand that music.’"
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "label": "Practice",
+      "title": "Fix and build",
+      "activities": [
+        {
+          "id": "a1",
+          "type": "correct",
+          "prompt": "Correct the sentence: The pie is tasting great.",
+          "example": "The pie tastes great."
+        },
+        {
+          "id": "a2",
+          "type": "ordering",
+          "prompt": "Put the words in order: thinking / what / you / are / about / now?",
+          "example": "What are you thinking about now?"
+        },
+        {
+          "id": "a3",
+          "type": "complete",
+          "prompt": "Complete with a future intention: I am going to ___ (open) the door.",
+          "example": "I am going to open the door."
+        },
+        {
+          "id": "a4",
+          "type": "writing",
+          "prompt": "Write one sentence about a routine and one about something happening around now.",
+          "example": "I usually do puzzles on Sundays. This week I’m trying a new puzzle."
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "label": "Reading",
+      "title": "A new activity",
+      "intro": "For each question, write approximately two or three sentences: answer, then explain briefly.",
+      "readings": [
+        {
+          "title": "Trying a climbing class",
+          "text": "Leo usually spends his free time doing puzzles and playing games. This month, his friend is trying a climbing class and invites him to join. Leo is interested, but he is not sure whether he will enjoy climbing.\n\nThe class has beginners and more experienced climbers. There is no opponent: people help one another learn safely. Leo decides he is going to try one class before choosing a regular activity. He thinks a new experience may help him discover what he enjoys.",
+          "questions": [
+            {
+              "id": "r1",
+              "q": "Which activity does Leo decide to try?",
+              "opt": [
+                "A climbing class",
+                "A cooking competition",
+                "A photography job"
+              ],
+              "a": 0,
+              "hint": "See the final paragraph."
+            },
+            {
+              "id": "r2",
+              "q": "What do the people in the class do?",
+              "opt": [
+                "They compete against an opponent.",
+                "They help one another learn safely.",
+                "They only solve puzzles."
+              ],
+              "a": 1,
+              "hint": "Look at the second paragraph."
+            }
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "rwrite1",
+          "type": "writing",
+          "prompt": "Why does Leo want to try the class? Give your answer and a reason in two or three sentences.",
+          "example": "Leo wants to try climbing because it is a new activity. He hopes the experience will help him discover what he enjoys."
+        },
+        {
+          "id": "rwrite2",
+          "type": "writing",
+          "prompt": "Would you try a new activity before choosing a regular hobby? Explain in two or three sentences.",
+          "example": "Yes, I would try a class first. It would help me decide whether the activity suits me."
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "label": "Listening",
+      "title": "Listen for a plan",
+      "intro": "Listening was postponed during the lesson. This short optional review uses the same themes; play it or read the script.",
+      "audioText": "I usually do puzzles after work. This week I'm trying a climbing class with a friend. We are going to start with the beginners because we want to learn safely.",
+      "activities": [
+        {
+          "id": "l1",
+          "type": "writing",
+          "prompt": "What does the speaker usually do, and what are they trying this week?",
+          "example": "The speaker usually does puzzles. This week they are trying a climbing class."
+        }
+      ]
+    },
+    {
+      "id": "quiz",
+      "label": "Final Quiz",
+      "title": "Tense and vocabulary check",
+      "questions": [
+        {
+          "id": "q1",
+          "q": "Choose the present continuous sentence.",
+          "opt": [
+            "The intern helping today.",
+            "The intern helps every day.",
+            "The intern help yesterday.",
+            "The intern is helping today."
+          ],
+          "a": 3,
+          "hint": "Use be + verb-ing."
+        },
+        {
+          "id": "q2",
+          "q": "Complete: They ___ going to try a class.",
+          "opt": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "a": 1,
+          "hint": "Use are with they."
+        },
+        {
+          "id": "q3",
+          "q": "An opponent is someone you…",
+          "opt": [
+            "compete against",
+            "ask for a recipe",
+            "work for as an intern",
+            "meet only at a hotel"
+          ],
+          "a": 0,
+          "hint": "Think about a game."
+        },
+        {
+          "id": "q4",
+          "q": "Choose the natural description of a pie.",
+          "opt": [
+            "The pie taste greats.",
+            "The pie tasting great.",
+            "The pie tastes great.",
+            "The pie is tastes great."
+          ],
+          "a": 2,
+          "hint": "Describe the quality with tastes."
+        },
+        {
+          "id": "q5",
+          "q": "Which sentence describes a routine?",
+          "opt": [
+            "He often comes to class late.",
+            "He is coming right now.",
+            "He is going to come tomorrow.",
+            "He coming often."
+          ],
+          "a": 0,
+          "hint": "Look for often and present simple."
+        },
+        {
+          "id": "q6",
+          "q": "Complete the question: What ___ thinking about?",
+          "opt": [
+            "you are",
+            "you do are",
+            "are you",
+            "are"
+          ],
+          "a": 2,
+          "hint": "In a question, be comes before the subject."
+        },
+        {
+          "id": "q7",
+          "q": "Which activity involves moving up a mountain?",
+          "opt": [
+            "collecting",
+            "gardening",
+            "tasting",
+            "climbing"
+          ],
+          "a": 3,
+          "hint": "It can be a physical activity."
+        },
+        {
+          "id": "q8",
+          "q": "Choose the sentence about an active test.",
+          "opt": [
+            "The sauce is spicy.",
+            "The chef is tasting the sauce.",
+            "The chef likes the sauce.",
+            "The sauce tastes good."
+          ],
+          "a": 1,
+          "hint": "The chef is doing something now."
+        },
+        {
+          "id": "q9",
+          "q": "Which sentence shows a future intention?",
+          "opt": [
+            "I going open it.",
+            "I open yesterday.",
+            "I'm going to open the door.",
+            "I'm opening usually."
+          ],
+          "a": 2,
+          "hint": "Be going to + base verb."
+        },
+        {
+          "id": "q10",
+          "q": "What is a useful short explanatory answer?",
+          "opt": [
+            "A main answer followed by a brief reason.",
+            "One answer without any connection.",
+            "A list of unrelated words.",
+            "A very long essay every time."
+          ],
+          "a": 0,
+          "hint": "Answer first, then explain."
+        }
+      ]
+    }
+  ]
+}

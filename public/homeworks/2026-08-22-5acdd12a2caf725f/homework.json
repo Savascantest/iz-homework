@@ -1,0 +1,295 @@
+{
+  "id": "2026-08-22-5acdd12a2caf725f",
+  "student": "Iz",
+  "date": "2026-08-22",
+  "dateLabel": "22 Aug 2026",
+  "title": "Hobbies & Preferences",
+  "subtitle": "Talk about free time, unusual hobbies and what you enjoy.",
+  "policyVersion": "iz-lesson-based-reinforcement@1",
+  "templateContractVersion": "iz-seven-section-interactive@1",
+  "assessmentPolicyVersion": "iz-ten-question-feedback@1",
+  "sections": [
+    {
+      "id": "notes",
+      "label": "Lesson Notes",
+      "title": "What makes a hobby?",
+      "intro": "We discussed holidays, familiar and unusual hobbies, and ways to explain preferences.",
+      "cards": [
+        {
+          "title": "A hobby",
+          "text": "A hobby is an activity you do in your free time for enjoyment. People may do it regularly, but they do not need to be experts."
+        },
+        {
+          "title": "From familiar to unusual",
+          "text": "We discussed gardening, photography, puzzles, coin collecting and toy voyaging. Explain what someone does and why the activity appeals to them."
+        },
+        {
+          "title": "Add a reason",
+          "text": "A preference becomes more interesting when you explain it: ‘I quite like photography because it helps me notice details.’"
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "label": "Grammar",
+      "title": "Preferences and -ing",
+      "cards": [
+        {
+          "title": "Enjoy + -ing",
+          "text": "Use enjoy + a noun or an -ing form for an activity: ‘I enjoy doing puzzles.’ Not: ‘I enjoy to do puzzles.’"
+        },
+        {
+          "title": "Like + -ing",
+          "text": "Like + -ing can describe an activity you enjoy: ‘She likes taking pictures.’ Like can also take an infinitive in many contexts: ‘She likes to take pictures.’"
+        },
+        {
+          "title": "Other expressions",
+          "text": "Use -ing after can't stand and don't mind: ‘I can’t stand waiting.’ ‘I don’t mind doing puzzles.’ After crazy about, use a noun or -ing: ‘I’m crazy about birdwatching.’"
+        },
+        {
+          "title": "Strength and meaning",
+          "text": "‘I quite like’ expresses a moderate positive preference. ‘I’m crazy about’ is much stronger. ‘I don’t mind’ means it is acceptable, not necessarily a favourite."
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "title": "Hobbies in context",
+      "cards": [
+        {
+          "title": "gardening",
+          "text": "Growing and looking after plants. ‘He enjoys gardening on weekends.’"
+        },
+        {
+          "title": "photography",
+          "text": "The activity of taking photographs. ‘She’s crazy about photography.’"
+        },
+        {
+          "title": "coin collecting",
+          "text": "Keeping coins as a collection; numismatics is the study or collecting of coins. ‘They enjoy collecting old coins.’"
+        },
+        {
+          "title": "do a puzzle",
+          "text": "Put pieces together to make a picture or solve a problem. ‘We do puzzles on rainy days.’"
+        },
+        {
+          "title": "birdwatching",
+          "text": "Watching birds as a hobby. ‘I quite like birdwatching.’"
+        },
+        {
+          "title": "toy voyaging",
+          "text": "Sending a toy on journeys and following its travels. ‘Toy voyaging is an unusual hobby.’"
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "label": "Practice",
+      "title": "Build your own sentences",
+      "activities": [
+        {
+          "id": "a1",
+          "type": "complete",
+          "prompt": "Complete: I enjoy ___ (take) pictures when I travel.",
+          "example": "I enjoy taking pictures when I travel."
+        },
+        {
+          "id": "a2",
+          "type": "correct",
+          "prompt": "Correct the verb form: She enjoys to do puzzles.",
+          "example": "She enjoys doing puzzles."
+        },
+        {
+          "id": "a3",
+          "type": "matching",
+          "prompt": "Match the meanings: crazy about / don't mind / can't stand — acceptable / dislike very strongly / like very much.",
+          "example": "Crazy about = like very much; don't mind = acceptable; can't stand = dislike very strongly."
+        },
+        {
+          "id": "a4",
+          "type": "speaking",
+          "prompt": "Describe one familiar hobby and one unusual hobby. Say which you would try and why.",
+          "example": "I quite like photography because I enjoy noticing details. Toy voyaging sounds unusual, but I would like to learn more."
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "label": "Reading",
+      "title": "Two different hobbies",
+      "readings": [
+        {
+          "title": "A collection and a journey",
+          "text": "Nora enjoys collecting coins. She looks for coins from different countries and reads about their history. She says each coin can tell a small story about a place.\n\nHer friend Sam has a different hobby: toy voyaging. Sam sends a small toy to friends in other places. They take photographs and share stories about its journey. Nora is curious, but she prefers finding coins. Both friends enjoy talking about their hobbies together.",
+          "questions": [
+            {
+              "id": "r1",
+              "q": "What does Nora enjoy collecting?",
+              "opt": [
+                "plants",
+                "coins",
+                "puzzles"
+              ],
+              "a": 1,
+              "hint": "Look at the first sentence."
+            },
+            {
+              "id": "r2",
+              "q": "How do Sam's friends help with the hobby?",
+              "opt": [
+                "They sell the toy.",
+                "They make coins.",
+                "They take photographs and share stories."
+              ],
+              "a": 2,
+              "hint": "Read the second paragraph."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "label": "Listening",
+      "title": "Listen to two preferences",
+      "intro": "Listen to this original dialogue and then explain the two speakers’ preferences. The script remains available below.",
+      "audioText": "I quite like doing puzzles, but I'm crazy about photography. What about you? I don't mind puzzles, but I can't stand collecting coins. I prefer gardening because I enjoy growing plants.",
+      "activities": [
+        {
+          "id": "l1",
+          "type": "writing",
+          "prompt": "Which hobby does the second speaker prefer, and why?",
+          "example": "The second speaker prefers gardening because they enjoy growing plants."
+        }
+      ]
+    },
+    {
+      "id": "quiz",
+      "label": "Final Quiz",
+      "title": "Check your preferences",
+      "questions": [
+        {
+          "id": "q1",
+          "q": "Complete: I enjoy ___ photographs.",
+          "opt": [
+            "to taking",
+            "taking",
+            "take",
+            "took"
+          ],
+          "a": 1,
+          "hint": "Enjoy + -ing."
+        },
+        {
+          "id": "q2",
+          "q": "Which expression means ‘I like it very much’?",
+          "opt": [
+            "I don't mind it.",
+            "I never try it.",
+            "I can't stand it.",
+            "I'm crazy about it."
+          ],
+          "a": 3,
+          "hint": "It is the strongest positive expression."
+        },
+        {
+          "id": "q3",
+          "q": "Which activity means looking after plants?",
+          "opt": [
+            "gardening",
+            "coin collecting",
+            "photography",
+            "toy voyaging"
+          ],
+          "a": 0,
+          "hint": "Plants grow in a garden."
+        },
+        {
+          "id": "q4",
+          "q": "Complete: She can't stand ___ for a bus.",
+          "opt": [
+            "to waits",
+            "waited",
+            "waiting",
+            "wait"
+          ],
+          "a": 2,
+          "hint": "Can't stand + -ing."
+        },
+        {
+          "id": "q5",
+          "q": "What does ‘I don't mind doing puzzles’ mean?",
+          "opt": [
+            "I only do puzzles for money.",
+            "I hate every puzzle.",
+            "I have never seen a puzzle.",
+            "Doing puzzles is acceptable to me."
+          ],
+          "a": 3,
+          "hint": "It is not a strong negative."
+        },
+        {
+          "id": "q6",
+          "q": "Choose the natural phrase.",
+          "opt": [
+            "do a puzzle",
+            "make a photography",
+            "play a gardening",
+            "do a photograph"
+          ],
+          "a": 0,
+          "hint": "We say do a puzzle."
+        },
+        {
+          "id": "q7",
+          "q": "What does a coin collector collect?",
+          "opt": [
+            "birds",
+            "coins",
+            "plants",
+            "cameras"
+          ],
+          "a": 1,
+          "hint": "The answer is in the name."
+        },
+        {
+          "id": "q8",
+          "q": "Complete: I'm crazy ___ birdwatching.",
+          "opt": [
+            "to",
+            "of",
+            "about",
+            "with"
+          ],
+          "a": 2,
+          "hint": "Crazy about + noun or -ing."
+        },
+        {
+          "id": "q9",
+          "q": "Which sentence gives a reason?",
+          "opt": [
+            "I like gardening because I enjoy plants.",
+            "I gardening today.",
+            "I don't mind.",
+            "She coins."
+          ],
+          "a": 0,
+          "hint": "Look for because."
+        },
+        {
+          "id": "q10",
+          "q": "Choose a correct sentence.",
+          "opt": [
+            "They enjoy to collect coins.",
+            "They enjoy collecting coins.",
+            "They enjoys collecting coins.",
+            "They enjoy collect coins."
+          ],
+          "a": 1,
+          "hint": "Enjoy + -ing; they enjoy."
+        }
+      ]
+    }
+  ]
+}

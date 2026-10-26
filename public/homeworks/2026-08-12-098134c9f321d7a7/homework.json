@@ -1,0 +1,292 @@
+{
+  "id": "2026-08-12-098134c9f321d7a7",
+  "student": "Iz",
+  "date": "2026-08-12",
+  "dateLabel": "12 Aug 2026",
+  "title": "Meeting People & Workplace Conversations",
+  "subtitle": "Start a conversation, introduce yourself and ask for help with confidence.",
+  "policyVersion": "iz-lesson-based-reinforcement@1",
+  "templateContractVersion": "iz-seven-section-interactive@1",
+  "assessmentPolicyVersion": "iz-ten-question-feedback@1",
+  "sections": [
+    {
+      "id": "notes",
+      "label": "Lesson Notes",
+      "title": "Starting conversations",
+      "intro": "We practised meeting someone in a coffee shop, starting work in a hotel kitchen and giving a chef thoughtful feedback.",
+      "cards": [
+        {
+          "title": "Begin naturally",
+          "text": "An icebreaker is a friendly question that helps people start talking. Choose one that fits the situation and listen to the answer."
+        },
+        {
+          "title": "Introduce yourself at work",
+          "text": "Say your name and role, mention relevant experience, then ask a practical question: ‘Hi, I’m Alex. I’m joining the kitchen team. Where should I start?’"
+        },
+        {
+          "title": "Feedback with care",
+          "text": "Mention something specific you enjoyed and, when appropriate, offer a gentle suggestion rather than a harsh judgment."
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "label": "Grammar",
+      "title": "Questions and polite requests",
+      "cards": [
+        {
+          "title": "Ask for help",
+          "text": "Use Can you + base verb for a direct, polite request: ‘Can you show me the kitchen?’ Could you + base verb is often softer: ‘Could you help me find the chef?’"
+        },
+        {
+          "title": "Open questions",
+          "text": "Use a question word to invite more than yes or no: ‘What do you enjoy about your work?’ ‘Where should I start?’"
+        },
+        {
+          "title": "Offer a preference",
+          "text": "Use would like + to + base verb: ‘I’d like to learn more about the team.’ Avoid ‘I would like learning’ in this pattern."
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "title": "Useful phrases",
+      "cards": [
+        {
+          "title": "break the ice",
+          "text": "Make people feel more comfortable at the beginning of a conversation. ‘A friendly question can break the ice.’"
+        },
+        {
+          "title": "colleague",
+          "text": "A person you work with. ‘I met a new colleague in the kitchen.’"
+        },
+        {
+          "title": "introduce yourself",
+          "text": "Tell someone who you are. ‘Let me introduce myself: I’m Alex.’"
+        },
+        {
+          "title": "feedback",
+          "text": "Comments about someone’s work or an experience. ‘The chef asked for feedback on the meal.’"
+        },
+        {
+          "title": "show me around",
+          "text": "Take someone to see the important places. ‘Could you show me around the kitchen?’"
+        },
+        {
+          "title": "first day",
+          "text": "The first day in a new role or place. ‘My first day was busy but interesting.’"
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "label": "Practice",
+      "title": "Try the conversation",
+      "intro": "Write or say your own answer, then compare it with the example. Several answers are possible.",
+      "activities": [
+        {
+          "id": "a1",
+          "type": "complete",
+          "prompt": "Complete a friendly request: Could you ___ me where the kitchen is?",
+          "example": "Could you show me where the kitchen is?"
+        },
+        {
+          "id": "a2",
+          "type": "correct",
+          "prompt": "Make this question natural: Where I should start?",
+          "example": "Where should I start?"
+        },
+        {
+          "id": "a3",
+          "type": "speaking",
+          "prompt": "Introduce yourself to a new colleague and ask one question about the workplace.",
+          "example": "Hi, I’m Alex. I’m joining the kitchen team today. Where should I start?"
+        },
+        {
+          "id": "a4",
+          "type": "writing",
+          "prompt": "Give a chef a specific compliment and one polite suggestion.",
+          "example": "I really enjoyed the sauce. Could it be a little less salty next time?"
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "label": "Reading",
+      "title": "A first day in the kitchen",
+      "readings": [
+        {
+          "title": "A new colleague",
+          "text": "Maya arrives at a hotel restaurant for her first day. The kitchen is busy, so she introduces herself to a colleague: ‘Hello, I’m Maya. I’m joining the team today.’ Her colleague smiles and offers to show her around.\n\nMaya asks where she should put her things and how she can help. Later, she meets the chef and briefly describes her experience. At lunch, the team talks about food. Maya asks what everyone enjoys cooking. The question helps the conversation feel relaxed.",
+          "questions": [
+            {
+              "id": "r1",
+              "q": "Why does Maya introduce herself?",
+              "opt": [
+                "She is meeting a colleague on her first day.",
+                "She is leaving the restaurant.",
+                "She is ordering a meal."
+              ],
+              "a": 0,
+              "hint": "Look at the first paragraph."
+            },
+            {
+              "id": "r2",
+              "q": "What does Maya ask after meeting her colleague?",
+              "opt": [
+                "Where to buy a hotel.",
+                "Where to put her things and how to help.",
+                "When the restaurant was built."
+              ],
+              "a": 1,
+              "hint": "She needs practical information."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "label": "Listening",
+      "title": "Listen to a first-day conversation",
+      "intro": "Play the short original dialogue, then practise saying both parts. If audio is unavailable, read the script below.",
+      "audioText": "Hello, I'm Maya. I'm joining the kitchen team today. Nice to meet you, Maya. Would you like me to show you around? Yes, please. Where should I start? You can begin by meeting the chef.",
+      "activities": [
+        {
+          "id": "l1",
+          "type": "writing",
+          "prompt": "What does Maya ask? Answer in one sentence.",
+          "example": "She asks where she should start."
+        }
+      ]
+    },
+    {
+      "id": "quiz",
+      "label": "Final Quiz",
+      "title": "A friendly final check",
+      "questions": [
+        {
+          "id": "q1",
+          "q": "What is an icebreaker?",
+          "opt": [
+            "A type of uniform",
+            "A kitchen appliance",
+            "A friendly way to start a conversation",
+            "A final exam"
+          ],
+          "a": 2,
+          "hint": "It helps people feel comfortable."
+        },
+        {
+          "id": "q2",
+          "q": "Which request is natural?",
+          "opt": [
+            "Could you show me the kitchen?",
+            "Could you showing me?",
+            "Could show you me?",
+            "Could you to show me?"
+          ],
+          "a": 0,
+          "hint": "Could you + base verb."
+        },
+        {
+          "id": "q3",
+          "q": "A colleague is someone who…",
+          "opt": [
+            "cooks only at home",
+            "visits a hotel once",
+            "writes a recipe",
+            "works with you"
+          ],
+          "a": 3,
+          "hint": "Think about your workplace."
+        },
+        {
+          "id": "q4",
+          "q": "Choose a question that invites a longer answer.",
+          "opt": [
+            "Is this a spoon?",
+            "What do you enjoy cooking?",
+            "Is it hot?",
+            "Are you here?"
+          ],
+          "a": 1,
+          "hint": "Look for a question word."
+        },
+        {
+          "id": "q5",
+          "q": "Choose the correct introduction.",
+          "opt": [
+            "I’m Alex is colleague.",
+            "Hi, joining am I team.",
+            "Hi, I’m Alex. I’m joining the team today.",
+            "Today team I are."
+          ],
+          "a": 2,
+          "hint": "Use a subject and a verb."
+        },
+        {
+          "id": "q6",
+          "q": "Which sentence gives specific positive feedback?",
+          "opt": [
+            "The plate is there.",
+            "I really enjoyed the sauce.",
+            "That is a kitchen.",
+            "This is the first day."
+          ],
+          "a": 1,
+          "hint": "It mentions something enjoyed."
+        },
+        {
+          "id": "q7",
+          "q": "Complete: Where ___ I start?",
+          "opt": [
+            "should",
+            "should to",
+            "I should",
+            "do should"
+          ],
+          "a": 0,
+          "hint": "Question word + should + subject."
+        },
+        {
+          "id": "q8",
+          "q": "What does ‘show me around’ mean?",
+          "opt": [
+            "Write a long report",
+            "Finish the work alone",
+            "Ask for a bill",
+            "Take me to see the important places"
+          ],
+          "a": 3,
+          "hint": "It helps a newcomer find their way."
+        },
+        {
+          "id": "q9",
+          "q": "Choose the softer request.",
+          "opt": [
+            "Could you help me, please?",
+            "Show me now!",
+            "You help me yesterday.",
+            "I helps you."
+          ],
+          "a": 0,
+          "hint": "Look for could and please."
+        },
+        {
+          "id": "q10",
+          "q": "Complete: I’d like ___ more about the team.",
+          "opt": [
+            "learn",
+            "learning",
+            "to learn",
+            "learned"
+          ],
+          "a": 2,
+          "hint": "Would like + to + base verb."
+        }
+      ]
+    }
+  ]
+}
