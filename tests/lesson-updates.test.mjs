@@ -122,3 +122,29 @@ test('14 September future-forms update is complete and retains its original read
   }
   assert.equal(original.sections.length,7);
 });
+
+test('5 September habits update is complete, private-safe, and retains its original reading',async()=>{
+  const original=JSON.parse(await readFile(new URL('../public/homeworks/2026-09-05-q7m2x9k4v8p6/homework.json',import.meta.url),'utf8'));
+  const lesson=applyLessonUpdate(original),get=id=>lesson.sections.find(s=>s.id===id);
+  assertPublicPackagePrivacy(lesson,'updated 5 September lesson');
+  assert.deepEqual(lesson.sections.map(s=>s.id),['notes','grammar','vocabulary','practice','reading','listening','writing','quiz']);
+  assert.equal(get('grammar').questions.length,15);
+  assert.equal(get('grammar').questions.filter(q=>q.type==='fill').length,5);
+  assert.equal(get('grammar').questions.filter(q=>q.opt?.length===2).length,5);
+  assert.equal(get('vocabulary').cards.length,15);
+  assert.ok(get('vocabulary').cards.every(c=>c.meaning&&c.example&&c.turkish?.word&&c.turkish?.meaning&&c.turkish?.example));
+  assert.equal(get('vocabulary').questions.length,15);
+  assert.equal(get('practice').questions.length,8);
+  assert.equal(get('practice').activities.length,2);
+  assert.equal(get('reading').readings.length,3);
+  assert.equal(get('reading').readings[0].text,original.sections.find(s=>s.id==='reading').readings[0].text);
+  assert.ok(get('reading').readings.every(r=>r.questions.length===6&&r.questions.filter(q=>q.opt.length===2).length===3));
+  assert.equal(get('listening').questions.length,5);
+  assert.equal(get('writing').activities[0].wordTarget,100);
+  assert.equal(get('quiz').questions.length,10);
+  for(const section of lesson.sections) for(const group of [section.questions||[],...(section.readings||[]).map(r=>r.questions||[])]) for(const q of group) {
+    if(q.type==='fill') assert.ok(q.accepted.length);
+    else assert.ok(Number.isInteger(q.a)&&q.a>=0&&q.a<q.opt.length);
+  }
+  assert.equal(original.sections.length,7);
+});
