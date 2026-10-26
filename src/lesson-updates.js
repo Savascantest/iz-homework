@@ -3,7 +3,9 @@ import {septemberUpdate} from './lesson-september.js';
 import {september21Update} from './lesson-september21.js';
 import {september14Update} from './lesson-september14.js';
 import {september05Update} from './lesson-september05.js';
+import {august26Update} from './lesson-august26.js';
 export const draftUpdates = {
+  '2026-08-26-E7FC178B': august26Update,
   '2026-09-05-q7m2x9k4v8p6': september05Update,
   '2026-09-14-r5n8c2z6w3h9': september14Update,
   '2026-09-21-t4j7m1q8y5k2': september21Update,
@@ -143,7 +145,7 @@ export function applyLessonUpdate(lesson) {
       case 'practice': return {...section,questions:questions(update.practice.questions,[2,0,3,1,0,3,1,2]),activities:update.practice.activities.map(a=>({...a,id:`v2-${a.id}`}))};
       case 'reading': return {...section,title:update.readingTitle||'Read about states and actions',intro:update.readingIntro||section.intro,readings:update.readings.map((r,i)=>({...r,text:r.originalReading?section.readings[0].text:r.text,questions:questions(r.questions,[[2,0,3,1,0,0],[1,3,0,0,1,1],[3,2,1,1,0,1]][i])}))};
       case 'listening': return {...section,title:update.listeningTitle||'Watch and listen',intro:update.listeningIntro||'Watch the external video, then answer the questions below.',audioText:undefined,activities:undefined,external:update.listening.external,questions:questions(update.listening.questions,[1,3,2,1,0])};
-      case 'quiz': return update.quizReplacements ? {...section,questions:section.questions.map(q=>update.quizReplacements[q.id]||q)} : section;
+      case 'quiz': return update.quizQuestions ? {...section,questions:questions(update.quizQuestions,[2,0,3,1,2,0,1,3,0,2])} : update.quizReplacements ? {...section,questions:section.questions.map(q=>update.quizReplacements[q.id]||q)} : section;
       default: return section;
     }
   });
