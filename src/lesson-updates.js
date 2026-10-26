@@ -4,7 +4,9 @@ import {september21Update} from './lesson-september21.js';
 import {september14Update} from './lesson-september14.js';
 import {september05Update} from './lesson-september05.js';
 import {august26Update} from './lesson-august26.js';
+import {august22Update} from './lesson-august22.js';
 export const draftUpdates = {
+  '2026-08-22-5acdd12a2caf725f': august22Update,
   '2026-08-26-E7FC178B': august26Update,
   '2026-09-05-q7m2x9k4v8p6': september05Update,
   '2026-09-14-r5n8c2z6w3h9': september14Update,
