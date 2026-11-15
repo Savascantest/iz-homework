@@ -8,10 +8,10 @@ import {assertIzArchitectureV1Package,isPrivacySafeFutureIzPackageId} from '../s
 const base='public/homeworks';
 const index=JSON.parse(await readFile(`${base}/index.json`,'utf8'));
 const packages=await Promise.all(index.map(async x=>JSON.parse(await readFile(`${base}/${x.id}/homework.json`,'utf8'))));
-const additions=packages.filter(p=>['2026-08-12','2026-08-22','2026-09-29','2026-10-17'].includes(p.date));
-test('archive contains eight unique lessons newest first with safe whitelisted index metadata',()=>{
- assert.equal(index.length,8);assert.equal(new Set(index.map(x=>x.id)).size,8);
- assert.deepEqual(index.map(x=>x.date),['2026-10-17','2026-09-29','2026-09-21','2026-09-14','2026-09-05','2026-08-26','2026-08-22','2026-08-12']);
+const additions=packages.filter(p=>['2026-08-12','2026-08-22','2026-09-29','2026-10-17','2026-10-26','2026-11-03','2026-11-14'].includes(p.date));
+test('archive contains eleven unique lessons newest first with safe whitelisted index metadata',()=>{
+ assert.equal(index.length,11);assert.equal(new Set(index.map(x=>x.id)).size,11);
+ assert.deepEqual(index.map(x=>x.date),['2026-11-14','2026-11-03','2026-10-26','2026-10-17','2026-09-29','2026-09-21','2026-09-14','2026-09-05','2026-08-26','2026-08-22','2026-08-12']);
  for(const x of index)assert.deepEqual(Object.keys(x).sort(),['date','dateLabel','id','title']);
  for(const p of additions){assert.ok(isPrivacySafeFutureIzPackageId(p.id,p.date));assertIzArchitectureV1Package(p);}
 });
@@ -23,7 +23,7 @@ test('source and distribution JSON respect recursive privacy and public files co
  async function walk(path){for(const e of await readdir(path,{withFileTypes:true})){const name=`${path}/${e.name}`;if(e.isDirectory())await walk(name);else{const data=await readFile(name);if(e.name.endsWith('.json'))assertPublicPackagePrivacy(JSON.parse(data.toString()));assert.doesNotMatch(data.toString(),/\b[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}\b/i);}}}
  await walk('public');await walk('dist');
 });
-test('all four original package Git blobs are preserved from the catch-up commit',()=>{
+test('all original package Git blobs are preserved from the catch-up commit',()=>{
  for(const p of packages.filter(p=>!additions.includes(p))){const path=`${base}/${p.id}/homework.json`;const actual=execFileSync('git',['hash-object',path],{encoding:'utf8'}).trim();const expected=execFileSync('git',['rev-parse',`d568f90:${path}`],{encoding:'utf8'}).trim();assert.equal(actual,expected);}
 });
 test('browser progress is package-scoped and has no server upload or LearnerState integration',async()=>{
