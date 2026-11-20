@@ -1,0 +1,5 @@
+.question-number{display:inline-grid;place-items:center;width:24px;height:24px;margin-right:8px;border-radius:50%;background:#e1eee5;color:#285e50;font-size:13px;font-weight:700}
+.reading .stack{gap:0;margin:18px 0 0}
+.reading .exercise{padding:16px 0;background:transparent;border:0;border-radius:0;border-top:1px solid #dce7df}
+.reading .exercise.right{border-left:3px solid #62a881;padding-left:12px}
+.reading .exercise.wrong{border-left:3px solid #d59769;padding-left:12px}
