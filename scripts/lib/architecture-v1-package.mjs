@@ -17,6 +17,7 @@ const REQUIRED_SECTIONS = [
   ['listening', 'Listening'],
   ['quiz', 'Final Quiz'],
 ];
+const OPTIONAL_SECTIONS = [['roleplay', 'Role-play']];
 
 export function isFutureIzArchitectureV1Package(pkg) {
   return typeof pkg?.date === 'string' && pkg.id !== '2026-08-26-E7FC178B';
@@ -85,7 +86,7 @@ function addAnswerDistributionViolations(questions, label, violations) {
 }
 
 function addSectionViolations(pkg, violations) {
-  if (!Array.isArray(pkg.sections) || pkg.sections.length !== REQUIRED_SECTIONS.length) {
+  if (!Array.isArray(pkg.sections) || ![REQUIRED_SECTIONS.length, REQUIRED_SECTIONS.length + OPTIONAL_SECTIONS.length].includes(pkg.sections.length)) {
     violations.push('sections: must contain the seven-section İz contract');
     return;
   }
@@ -106,6 +107,14 @@ function addSectionViolations(pkg, violations) {
         if (!reading || typeof reading !== 'object') violations.push(`sections.${id}.readings[${index}]: must be an object`);
         else if (reading.questions !== undefined) addQuestionViolations(reading.questions, `sections.${id}.readings[${index}].questions`, violations);
       });
+    }
+  }
+  for (const [id, label] of OPTIONAL_SECTIONS) {
+    const section = byId.get(id);
+    if (section && section.label !== label) violations.push(`sections.${id}.label: must equal ${label}`);
+    if (section?.questions) {
+      addQuestionViolations(section.questions, `sections.${id}.questions`, violations);
+      addAnswerDistributionViolations(section.questions, `sections.${id}.questions`, violations);
     }
   }
   const quiz = byId.get('quiz');

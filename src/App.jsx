@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 import {applyLessonUpdate} from './lesson-updates.js';
 import './question-layout.css';
 
-const icons={notes:'✦',grammar:'Aa',vocabulary:'◇',practice:'✓',reading:'▤',listening:'◖',writing:'✎',quiz:'★'};
+const icons={notes:'✦',grammar:'Aa',vocabulary:'◇',practice:'✓',reading:'▤',listening:'◖',roleplay:'◌',writing:'✎',quiz:'★'};
 const read=(key,fallback={})=>{try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback))}catch{return fallback}};
 const save=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value))}catch{}};
 function Exercise({q,id,answers,setAnswer,number,plain=false}){
