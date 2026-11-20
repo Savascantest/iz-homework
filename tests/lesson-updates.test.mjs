@@ -226,3 +226,20 @@ test('12 August workplace update is complete, private-safe, and retains its orig
   }
   assert.equal(original.sections.length,7);
 });
+
+test('14 November lesson uses contextual exercises and gives grammar feedback after correct answers',async()=>{
+  const original=JSON.parse(await readFile(new URL('../public/homeworks/2026-11-14-k7p3m9x2v6qd/homework.json',import.meta.url),'utf8'));
+  const lesson=applyLessonUpdate(original),get=id=>lesson.sections.find(s=>s.id===id);
+  assertPublicPackagePrivacy(lesson,'updated November lesson');
+  assert.equal(get('grammar').questions.length,15);
+  assert.ok(get('grammar').questions.every(q=>q.explanation));
+  assert.equal(get('vocabulary').questions.length,15);
+  assert.equal(get('practice').questions.length,8);
+  assert.ok(get('reading').readings.every(r=>r.questions.length===6));
+  assert.equal(get('listening').questions.length,5);
+  assert.equal(get('quiz').questions.length,10);
+  for(const section of lesson.sections) for(const group of [section.questions||[],...(section.readings||[]).map(r=>r.questions||[])]) for(const q of group) {
+    if(q.type==='fill') assert.ok(q.accepted.length);
+    else assert.ok(Number.isInteger(q.a)&&q.a>=0&&q.a<q.opt.length);
+  }
+});
