@@ -8,10 +8,10 @@ import {assertIzArchitectureV1Package,isPrivacySafeFutureIzPackageId} from '../s
 const base='public/homeworks';
 const index=JSON.parse(await readFile(`${base}/index.json`,'utf8'));
 const packages=await Promise.all(index.map(async x=>JSON.parse(await readFile(`${base}/${x.id}/homework.json`,'utf8'))));
-const additions=packages.filter(p=>['2026-08-12','2026-08-22','2026-09-29','2026-10-17','2026-10-26','2026-11-03','2026-11-14','2026-11-20'].includes(p.date));
-test('archive contains twelve unique lessons newest first with safe whitelisted index metadata',()=>{
- assert.equal(index.length,12);assert.equal(new Set(index.map(x=>x.id)).size,12);
- assert.deepEqual(index.map(x=>x.date),['2026-11-20','2026-11-14','2026-11-03','2026-10-26','2026-10-17','2026-09-29','2026-09-21','2026-09-14','2026-09-05','2026-08-26','2026-08-22','2026-08-12']);
+const additions=packages.filter(p=>['2026-08-12','2026-08-22','2026-09-29','2026-10-17','2026-10-26','2026-11-03','2026-11-14','2026-11-20','2026-11-26'].includes(p.date));
+test('archive contains thirteen unique lessons newest first with safe whitelisted index metadata',()=>{
+ assert.equal(index.length,13);assert.equal(new Set(index.map(x=>x.id)).size,13);
+ assert.deepEqual(index.map(x=>x.date),['2026-11-26','2026-11-20','2026-11-14','2026-11-03','2026-10-26','2026-10-17','2026-09-29','2026-09-21','2026-09-14','2026-09-05','2026-08-26','2026-08-22','2026-08-12']);
  for(const x of index)assert.deepEqual(Object.keys(x).sort(),['date','dateLabel','id','title']);
  for(const p of additions){assert.ok(isPrivacySafeFutureIzPackageId(p.id,p.date));assertIzArchitectureV1Package(p);}
 });
